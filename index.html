@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Belajar Javascript - NIOMIC</title>
+</head>
+
+<body>
+    <button type="button" onclick="berubah()" name="button">Jalankan</button>
+    <br />
+    <br />
+    <hr />
+    <b>Base URI</b> Property : <br />
+    <p id="satu">contoh</p>
+    <hr />
+    <b>Body</b> Property : <br />
+    <p id="dua">contoh</p>
+    <hr />
+    <b>Create</b> Element : <br /><br />
+
+    <script type="text/javascript">
+        function berubah() {
+            var w = document.baseURI;
+            document.getElementById("satu").innerHTML = w;
+
+            document.body.style.backgroundColor = "green";
+            document.getElementById("dua").innerHTML = "color : green";
+
+            var s = document.createElement("input");
+            document.body.appendChild(s);
+        }
+    </script>
+</body>
+
+</html>
